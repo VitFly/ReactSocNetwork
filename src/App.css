@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.app-wrapper{
+  margin: 0px auto;
+  width: 1320px;
+  display: grid;
+  grid-template-areas: 
+  "h h" 
+  "n c";
+
+  grid-template-rows: 60px 4fr;
+  grid-template-columns: 10fr 2fr;
+  /* gap: 10px; */
+}
+.header{
+  grid-area: h;
+  background-color: green;
+}
+.header img {
+  width: 20px;
+
+}
+.nav{
+  grid-area: n;
+  background-color: rgb(199, 156, 64);
+}
+.content{
+  grid-area: c;
+  background-color:  cornflowerblue;
+}
