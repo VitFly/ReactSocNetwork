@@ -1,0 +1,17 @@
+.nav{
+    grid-area: n;
+    background-color: rgb(199, 156, 64);
+  }
+.nav__link{
+  text-align: center;
+  padding-top: 1.2em;
+  color: rgb(236, 236, 207); 
+}
+.nav__link:hover{
+  color: rgb(200, 202, 183);
+  transition: 2.s;
+  -webkit-transition: 2.s;
+  -moz-transition: 2.s;
+  -ms-transition: 2.s;
+  -o-transition: 2.s;
+}

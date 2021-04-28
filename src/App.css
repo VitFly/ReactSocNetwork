@@ -31,7 +31,11 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
   to {
     transform: rotate(360deg);
   }
@@ -39,29 +43,13 @@
 
 .app-wrapper{
   margin: 0px auto;
-  width: 1320px;
+  width: 92%;
   display: grid;
   grid-template-areas: 
   "h h" 
   "n c";
 
-  grid-template-rows: 60px 4fr;
+  grid-template-rows: 80px 4fr;
   grid-template-columns: 10fr 2fr;
   /* gap: 10px; */
-}
-.header{
-  grid-area: h;
-  background-color: green;
-}
-.header img {
-  width: 20px;
-
-}
-.nav{
-  grid-area: n;
-  background-color: rgb(199, 156, 64);
-}
-.content{
-  grid-area: c;
-  background-color:  cornflowerblue;
 }
